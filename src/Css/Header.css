@@ -1,0 +1,91 @@
+.header-wrap > h1 {
+    font-size: 56px;
+    font-weight: 700;
+    padding-left: 32px;
+}
+
+.login-header-wrap > h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.header-wrap {
+    width: 100%;
+    min-width: 1000px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-header-wrap {
+    width: 400px;
+}
+
+.input-seach {
+    display: flex;
+    align-items: center;
+}
+
+.input-seach > input{
+    width: 480px;
+    height: 54px;
+    border-radius: 16px;
+    border: none;
+    font-size: 16px;
+    padding-left: 16px;
+}
+
+.input-seach > input:focus {
+    box-shadow: 0 0 8px #4e82eb;
+    outline: none;
+}
+
+.input-seach > input::placeholder {
+    color: #e3e3e3;
+    font-size: 16px;
+}
+
+.seach-icon {
+    color: #4e82eb;
+    width: 26px;
+    height: 26px;
+    margin-left: 16px;
+}
+
+.info-wrap {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 32px;
+}
+
+.logout-btn {
+    background-color: red;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 16px;
+    color: white;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.info-id {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.info-id > span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info-email {
+    color: #787677;
+}

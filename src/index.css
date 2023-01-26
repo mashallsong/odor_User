@@ -1,13 +1,72 @@
+@import 'reset.css';
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: #f4f5fe;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.root-wrap {
+    display: flex;
 }
+
+.sidenav-container {
+    background-color: #0c0c0c;
+    padding: 0px 16px;
+    max-width: 320px;
+    max-height: 100%;
+}
+
+.sidenav-list-wrap ul li img {
+    margin-right: 16px;
+}
+
+.sidenav-list-wrap ul li {
+    margin-top: 16px;
+}
+
+.side-nav-item {
+    width: 216px;
+    height: 80px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #787677;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 64px;
+    background-color: #0c0c0c;
+    border-radius: 16px;
+}
+
+.side-nav-item:hover {
+    width: 216px;
+    height: 80px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 64px;
+    background-color: #4e82eb;
+    border-radius: 16px;
+}
+
+.side-nav-item-login {
+    width: 216px;
+    height: 80px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 64px;
+    background-color: #4e82eb;
+    border-radius: 16px;
+}
+
+.sidenav-list-wrap ul li span {
+    margin-left: 16px;
+} 
