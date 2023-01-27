@@ -45,7 +45,7 @@ export default function Home(){
                                     frameborder="0"
                                     id="inlineFrameExample"
                                     title="Inline Frame Example"
-                                     />
+                            />
                         </div>
                     </div>
                     <div className="home-layout-2">
