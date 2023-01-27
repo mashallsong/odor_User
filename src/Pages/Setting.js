@@ -6,8 +6,9 @@ import {faMagnifyingGlass, faWrench} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Button from '@mui/material/Button';
+import Checkbox from '@mui/material/Checkbox';
 
-
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 export default function Setting(){
     return (
@@ -66,7 +67,7 @@ export default function Setting(){
                                         variant="outlined">
                                         수 정
                                 </Button>
-                                <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , margin: '0 16px' , padding: '6px 64px', border: 'none' , color:'white'}} 
+                                <Button style={{backgroundColor: '#DFDFDF' , borderRadius:'8px' , margin: '0 16px' , padding: '6px 64px', border: 'none' , color:'white'}} 
                                         variant="outlined">
                                         저 장
                                 </Button>
@@ -78,10 +79,77 @@ export default function Setting(){
                             <div className="setting-layout-header">
                                 <h3>경고설정</h3> <span>Alert Settings</span>
                             </div>
+                            <div className="settingLayoutBody2">
+                                <ul className="realtimeTableTh">
+                                    <li>선택</li>
+                                    <li>항목</li>
+                                    <li>환경부 허용치 (ppm)</li>
+                                    <li>사용자 기준치</li>
+                                    <li>경광등 작동</li>
+                                    <li>SNS 알림</li>
+                                </ul>
+                                <ul className="realtimeTableTd">
+                                <li>
+                                    <Checkbox
+                                        {...label}
+                                        sx={{ '& .MuiSvgIcon-root': { fontSize: 28 } }}
+                                    />
+                                </li>
+                                <li>암모니아</li>
+                                <li>1.00</li>
+                                <li>0.95</li>
+                                <li>
+                                    <Checkbox
+                                        {...label}
+                                        defaultChecked
+                                        sx={{ '& .MuiSvgIcon-root': { fontSize: 28 } }}
+                                    />
+                                </li>
+                                <li>
+                                    <Checkbox
+                                        {...label}
+                                        defaultChecked
+                                        sx={{ '& .MuiSvgIcon-root': { fontSize: 28 } }}
+                                    />
+                                </li>
+                            </ul>
+                            <div className="settingLayoutBody1Btn">
+                                <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , margin: '0 16px' , padding: '6px 64px', border: 'none' , color:'white'}} 
+                                        variant="outlined">
+                                        수 정
+                                </Button>
+                                <Button style={{backgroundColor: '#0F0F0F' , borderRadius:'8px' , margin: '0 16px' , padding: '6px 64px', border: 'none' , color:'white'}} 
+                                        variant="outlined">
+                                        저 장
+                                </Button>
+                            </div>
+                            </div>
                         </div>
                         <div className="setting-layout-2_2">
                             <div className="setting-layout-header">
                                 <h3>측정 간격 설정</h3> <span>Setting the Measurement Interval</span>
+                            </div>
+                            <div className="settingLayoutBody3">
+                                <ul className="realtimeTableTh">
+                                    <li>항목</li>
+                                    <li>환경부 허용치 (ppm)</li>
+                                    <li>사용자 기준치</li>
+                                </ul>
+                                <ul className="realtimeTableTd">
+                                    <li>MOS-KR00001</li>
+                                    <li>30</li>
+                                    <li>10</li>
+                                </ul>
+                                <div className="settingLayoutBody1Btn">
+                                <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , margin: '0 16px' , padding: '6px 64px', border: 'none' , color:'white'}} 
+                                        variant="outlined">
+                                        수 정
+                                </Button>
+                                <Button style={{backgroundColor: '#0F0F0F' , borderRadius:'8px' , margin: '0 16px' , padding: '6px 64px', border: 'none' , color:'white'}} 
+                                        variant="outlined">
+                                        저 장
+                                </Button>
+                                </div>
                             </div>
                         </div>
                     </div>

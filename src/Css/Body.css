@@ -393,6 +393,43 @@
     margin-top: 32px;
 }
 
+.settingLayoutBody2 {
+    padding: 0 16px;
+}
+
+.settingLayoutBody2 > ul {
+    width: 100%;
+}
+
+.settingLayoutBody2 > ul > li {
+    width: 16%;
+    text-align: center;
+}
+
+.realtimeTableTh {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    color: #130c0e;
+    background-color: #F5F6FF;
+}
+
+.realtimeTableTd:hover {
+    background-color: #F2F4FD;
+}
+
+.settingLayoutBody3 {
+    padding: 0 16px;
+}
+
+.settingLayoutBody3 > ul {
+    width: 100%;
+}
+
+.settingLayoutBody3 > ul > li {
+    width: 33%;
+    text-align: center;
+}
 
 
 
