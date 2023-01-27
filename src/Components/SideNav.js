@@ -23,7 +23,7 @@ export default function SideNav(){
                     </Link>
                     <ul>
                         <li>
-                            <Link className="side-nav-item-login" to="/Login">
+                            <Link className="side-nav-item" to="/Login">
                                 <FontAwesomeIcon icon={faUnlockKeyhole} />
                                 <span>로그인</span>
                             </Link>
