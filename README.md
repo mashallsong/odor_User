@@ -1,7 +1,10 @@
 ## 냄새측정기 User 관리 시스템
 본 프로잭트는  냄새측정기 유저 관리용으로 만들어진 관리 시스템.
- -  2023.01.2
+ -  2023.01.27
     Home.js 퍼블리싱 완료 7
+    BI 수정 및 Setting 작업 진행 중...
+
+    
 
 # Getting Started with Create React App
 

@@ -15,13 +15,13 @@ body {
     max-height: 100%;
 }
 
-.sidenav-list-wrap ul li img {
-    margin-right: 16px;
-}
-
 .sidenav-list-wrap ul li {
     margin-top: 16px;
 }
+
+.sidenav-list-wrap ul li span {
+    margin-left: 16px;
+} 
 
 .side-nav-item {
     width: 216px;
@@ -67,6 +67,3 @@ body {
     border-radius: 16px;
 }
 
-.sidenav-list-wrap ul li span {
-    margin-left: 16px;
-} 

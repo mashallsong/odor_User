@@ -18,7 +18,7 @@ export default function SideNav(){
             <div className="sidenav-wrap">
                 <div className="sidenav-list-wrap">
                     <Link to='/'>
-                        <img style={{marginTop: "32px", marginBottom: "32px"}} 
+                        <img style={{marginTop: "32px", marginBottom: "32px" , marginLeft: "18px"}} 
                              src={Logo} alt="로고" />
                     </Link>
                     <ul>

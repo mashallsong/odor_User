@@ -88,6 +88,10 @@
 }
 
 
+
+
+
+
 /* HOME BODY */
 
 .body-wrap-home {
@@ -301,6 +305,9 @@
 }
 
 
+
+
+
 /* SETTING BODY */
 .body-wrap-setting {
 
@@ -356,6 +363,38 @@
 .setting-layout-header > span {
     color: #787677;
 }
+
+.settingLayoutBody1 {
+    margin-top: 8px;
+}
+
+.textInputList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 32px;
+}
+
+.textInput1 {
+    width: 75%;
+    border: 1px solid #E3E3E3;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 16px;
+}
+
+.textInput1:focus-within {
+    border: 2px solid #4e82eb;
+}
+
+.settingLayoutBody1Btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+
+
 
 /* CUSTOMER BODY */
 
