@@ -2,9 +2,12 @@ import React from "react";
 import '../Css/Header.css';
 import '../Css/Body.css';
 
-
+/* 폰트어썸 import */
 import {faMagnifyingGlass, faWrench} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import Button from '@mui/material/Button';
+
 
 
 
@@ -68,17 +71,24 @@ export default function Home(){
                                 <h3>측정 그래프</h3> <span>Measurement graph</span>
                             </div>
                             <div className="home3Button">
-                                <button className="homeBtnst1">암모니아</button>
-                                <button className="homeBtnst2">황화수소</button>
-                                <button className="homeBtnst3">온도</button>
-                                <button className="homeBtnst4">수소</button>
+                                <Button style={{backgroundColor: '#FDF2E2' , color: '#A06500' , padding: '4px 16px' , border: 'none'}} 
+                                        variant="outlined">암모니아</Button>
+                                <Button style={{backgroundColor: '#E2DAFF' , color: '#8906C3' , padding: '4px 16px' , border: 'none'}} 
+                                        variant="outlined">황화수소</Button>
+                                <Button style={{backgroundColor: '#FAD9ED' , color: '#BF0B78' , padding: '4px 16px' , border: 'none'}} 
+                                        variant="outlined">온도</Button>
+                                <Button style={{backgroundColor: '#B4CDCE' , color: '#2C7679' , padding: '4px 16px' , border: 'none'}} 
+                                        variant="outlined">수소</Button>
                             </div>
                         </div>
                         <div className="homeGraph">
                             <a href="https://www.highcharts.com/demo/line-labels" target="_blank" rel="noopener noreferrer">그래프 참조 사이트 클릭</a>
                         </div>
                         <div className="homePrint">
-                            <button className="homePrintBtn">측정이력 출력</button>
+                            <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , marginRight: '32px' , padding: '6px 32px', border: 'none' , color:'white'}} 
+                                    variant="outlined">
+                                    측정이력 출력
+                            </Button>
                         </div> 
                     </div>
                     <div className="home-layout-2">
@@ -86,7 +96,45 @@ export default function Home(){
                             <h3>실시간 장비상태</h3> <span>Real-time Equipment status</span>
                         </div>
                         <div className="home4TableWrap">
-
+                            <ul className="realtimeTableTh">
+                                <li>장비 Part ON</li>
+                                <li>센서상태</li>
+                                <li>측정치 누락</li>
+                                <li>재설정</li>
+                            </ul>
+                            <ul className="realtimeTableTd">
+                                <li>MOS - KR00001</li>
+                                <li>정상동작</li>
+                                <li>0</li>
+                                <li>
+                                    <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '6px 8px', border: 'none' , color:'white'}} 
+                                            ariant="outlined">
+                                            재설정
+                                    </Button>
+                                </li>
+                            </ul>
+                            <ul className="realtimeTableTd2">
+                                <li>MOS - KR00002</li>
+                                <li> <span className="textCheck">통신오류</span></li>
+                                <li>15</li>
+                                <li>
+                                    <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '6px 8px', border: 'none' , color:'white'}} 
+                                            ariant="outlined">
+                                            재설정
+                                    </Button>
+                                </li>
+                            </ul>
+                            <ul className="realtimeTableTd3">
+                                <li>MOS - KR00003</li>
+                                <li> <span className="textError">점검필요</span></li>
+                                <li>15</li>
+                                <li>
+                                    <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '6px 8px', border: 'none' , color:'white'}} 
+                                            ariant="outlined">
+                                            재설정
+                                    </Button>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

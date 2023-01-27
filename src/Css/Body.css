@@ -199,7 +199,7 @@
 }
 
 .home2Graph > meter::-webkit-meter-optimum-value {
-    background: #4ea82eb;
+    background: #4e82eb;
 }
 
 .homeBtnst1 {
@@ -244,6 +244,58 @@
     align-items: center;
     justify-content: center;
 
+}
+
+.home4TableWrap {
+    padding: 0 16px;
+}
+
+.home4TableWrap > ul {
+    width: 100%;
+}
+
+.home4TableWrap > ul > li {
+    width: 25%;
+    text-align: center;
+}
+
+.realtimeTableTh {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    color: #130c0e;
+    background-color: #F5F6FF;
+}
+
+.realtimeTableTd {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F5F6FF;
+}
+
+.realtimeTableTd2 {
+    background-color: #FFF5E8;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F5F6FF;
+}
+
+.realtimeTableTd3 {
+    background-color: #FCE9E8;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F5F6FF;
+}
+
+.textCheck {
+    color: #F29729;
+}
+
+.textError {
+    color: #A9331C;
 }
 
 
