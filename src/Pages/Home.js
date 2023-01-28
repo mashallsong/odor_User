@@ -86,7 +86,8 @@ export default function Home(){
                         </div>
                         <div className="homePrint">
                             <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , marginRight: '32px' , padding: '6px 32px', border: 'none' , color:'white'}} 
-                                    variant="outlined">
+                                    variant="outlined"
+                                    href="/HomePrintList" >
                                     측정이력 출력
                             </Button>
                         </div> 
