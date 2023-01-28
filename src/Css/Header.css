@@ -4,6 +4,12 @@
     padding-left: 32px;
 }
 
+.headerBtn > h1 {
+    font-size: 56px;
+    font-weight: 700;
+    padding-left: 32px;
+}
+
 .login-header-wrap > h1 {
     font-size: 56px;
     font-weight: 700;
@@ -89,3 +95,8 @@
 .info-email {
     color: #787677;
 }
+
+.headerBtn {
+    display: flex;
+}
+

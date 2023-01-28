@@ -23,27 +23,27 @@ export default function SideNav(){
                     </Link>
                     <ul>
                         <li>
-                            <Link className="side-nav-item-login" to="/Login">
+                            <Link className="side-nav-item" to="/Login">
                                 <FontAwesomeIcon icon={faUnlockKeyhole} />
                                 <span>로그인</span>
                             </Link>
                         </li>
                         <li>
-                            <Link className="side-nav-item" to="/Home">
+                            <Link className="side-nav-item" to="/AdminSetting">
                                 <FontAwesomeIcon icon={faHouse} />
-                                <span>HOME</span>
+                                <span>관리자 설정</span>
                             </Link>
                         </li>
                         <li>
-                            <Link className="side-nav-item" to="/Setting">
+                            <Link className="side-nav-item" to="/Registration">
                                 <FontAwesomeIcon icon={faGear} />
-                                <span>설정</span>
+                                <span>장비등록</span>
                             </Link>
                         </li>
                         <li>
-                            <Link className="side-nav-item" to="/Customer">
+                            <Link className="side-nav-item" to="/Management">
                                 <FontAwesomeIcon icon={faWrench} />
-                                <span>고객지원</span>
+                                <span>장비관리</span>
                             </Link>
                         </li>
                     </ul>

@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SideNav from "./Components/SideNav";
-import Customer from "./Pages/Customer";
-import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Notfound from "./Pages/Notfound";
-import Setting from "./Pages/Setting";
+import AdminSetting from "./Pages/AdminSetting";
+import Registration from "./Pages/Registration";
+import Management from "./Pages/Management";
 
 
 
@@ -16,9 +16,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Setting" element={<Setting />} />
-          <Route path="/Customer" element={<Customer />} />
+          <Route path="/AdminSetting" element={<AdminSetting />} />
+          <Route path="/Registration" element={<Registration />} />
+          <Route path="/Management" element={<Management />} />
           <Route path="/*" element={<Notfound />} />
         </Routes>
       </BrowserRouter>
