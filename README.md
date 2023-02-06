@@ -6,10 +6,13 @@
  -  Home > 사용자 정보 > 지도 클릭 시 모달창 버튼 > 모달 제작
  -  HomePrintList.js 기간별 검색 추가
 
-1. 인스톨 : npm install react-datepicker --save
-2. 임포트 :  import DatePicker from "react-datepicker";
+1. 인스톨 :
+            npm install react-datepicker --save
+2. 임포트 :
+            import DatePicker from "react-datepicker";
             import "react-datepicker/dist/react-datepicker.css";
 3. html : 
+
             <div className="CalendarSeach">
                 <span>기간 검색</span>
                 <div>
