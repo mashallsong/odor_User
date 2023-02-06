@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import '../Css/Header.css';
 import '../Css/Body.css';
 
@@ -18,6 +18,10 @@ import Select from '@mui/material/Select';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 
+// 달력
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 
 export default function HomePrintList(){
     
@@ -27,6 +31,11 @@ export default function HomePrintList(){
         setList(event.target.value);
     };
     
+    // 달력
+    const [startDate, setStartDate] = useState(new Date())
+    const [endDate, setEndDate] = useState(new Date())
+
+
     return (
         <div className="container">
             <div className="header-wrap">
@@ -54,7 +63,8 @@ export default function HomePrintList(){
                         </div>
                         <div className="HomePrintListLayoutBody">
                             <div className="HomePrintListSelect">
-                                <Box sx={{ minWidth: 120 }}>
+                                {/* PartNo 검색 */}
+                                <Box sx={{ minWidth: 200 }}>
                                     <FormControl fullWidth>
                                         <InputLabel id="demo-simple-select-label">Part No</InputLabel>
                                         <Select
@@ -71,6 +81,33 @@ export default function HomePrintList(){
                                         </Select>
                                     </FormControl>
                                 </Box>
+
+                                {/* 달력 */}   
+                                <div className="CalendarSeach">
+                                    <span>기간 검색</span>
+                                    <div>
+                                        <DatePicker
+                                            selected={startDate}
+                                            onChange={(date:Date) => setStartDate(date)}
+                                            selectsStart
+                                            startDate={startDate}
+                                            endDate={endDate}
+                                            className={'DPstartDate'}
+                                        />
+                                    </div>
+                                    <span>~</span>
+                                    <div>
+                                        <DatePicker
+                                            selected={endDate}
+                                            onChange={(date:Date) => setEndDate(date)}
+                                            selectsEnd
+                                            startDate={endDate}
+                                            endDate={endDate}
+                                            minDate={startDate}
+                                            className={'DPstartDate'}
+                                        />
+                                    </div>
+                                </div>
                             </div>
                             <div className="HomePrintListTable">
                                 <ul className="realtimeTableTh">

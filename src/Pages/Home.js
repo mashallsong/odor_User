@@ -3,37 +3,14 @@ import '../Css/Header.css';
 import '../Css/Body.css';
 
 /* 폰트어썸 import */
-import {faMagnifyingGlass, faWrench} from '@fortawesome/free-solid-svg-icons';
+import {faMagnifyingGlass, faClose, faLocationDot} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-// 모달팝업용
-import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
-import TextField from '@mui/material/TextField';
 
-// 모달팝업용
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-};
+import Button from '@mui/material/Button';
 
 
 export default function Home(){
-    // 모달팝업용
-    const [open, setOpen] = React.useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
-
-
     return (
         <div className="container">
             <div className="header-wrap">
@@ -58,35 +35,28 @@ export default function Home(){
                     <div className="home-layout-1">
                         <div className="home-layout-header">
                             <h3>사용자 정보</h3> <span>User info</span>
-
-                            {/* 모달팝업용 */}
-                            <Button onClick={handleOpen}>지도 클릭 시 모달창</Button>
-                            <Modal
-                                open={open}
-                                onClose={handleClose}
-                                aria-labelledby="modal-modal-title"
-                                aria-describedby="modal-modal-description"
-                            >
-                                <Box sx={style}>
-                                <Box
-                                    component="form"
-                                    sx={{
-                                        '& > :not(style)': { m: 1, width: '90%' },
-                                    }}
-                                    noValidate
-                                    autoComplete="off"
-                                    >
-                                    <TextField id="standard-basic" label="Device:" variant="standard" />
-                                </Box>
-                                <Typography id="modal-modal-title" variant="h6" component="h2">
-                                    ID : IX0100003
-                                </Typography>
-                                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                                    Location : 741 singildong yougdongpogu seoul
-                                </Typography>
-                                </Box>
-                            </Modal>
-
+                            {/* <div className="MapModal">
+                                <div className="MapModalClose">
+                                    <FontAwesomeIcon className="ModalCloseIcon" icon={faClose} />
+                                </div>
+                                <div className="ModalText">
+                                    <ul>
+                                        <li><span>Device :</span> <span className="ModalDevice">EV-M-1234</span></li>
+                                        <li><span>ID :</span> Y23-M01-XXXXX</li>
+                                        <li><span>Location :</span> 경기도 화성시 남양읍 461</li>
+                                    </ul>
+                                </div>
+                                <div className="MapModalDetailBtn">
+                                    <div>
+						                <FontAwesomeIcon icon={faLocationDot} style={{ color: '#75C03A' , fontSize: '20px' }} />
+						                온라인 정상동작
+					                </div>
+                                    <Button style={{backgroundColor: '#0F0F0F' , borderRadius:'8px' , padding: '6px 32px', border: 'none' , color:'white'}} 
+                                        variant="outlined">
+                                        세부정보 표시
+                                    </Button>
+                                </div>
+                            </div> */}
                         </div>
                         <div className="home1Contents">
                             <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik" 

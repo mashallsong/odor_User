@@ -4,6 +4,60 @@
  -  BI 수정 및 Setting 작업 완료
  -  2023.01.28 HomePrintList 추가 작업 완료
  -  Home > 사용자 정보 > 지도 클릭 시 모달창 버튼 > 모달 제작
+ -  HomePrintList.js 기간별 검색 추가
+
+1. 인스톨 : npm install react-datepicker --save
+2. 임포트 :  import DatePicker from "react-datepicker";
+            import "react-datepicker/dist/react-datepicker.css";
+3. html : 
+            <div className="CalendarSeach">
+                <span>기간 검색</span>
+                <div>
+                    <DatePicker
+                        selected={startDate}
+                        onChange={(date:Date) => setStartDate(date)}
+                        selectsStart
+                        startDate={startDate}
+                        endDate={endDate}
+                        className={'DPstartDate'}
+                    />
+                </div>
+                <span>~</span>
+                <div>
+                    <DatePicker
+                        selected={endDate}
+                        onChange={(date:Date) => setEndDate(date)}
+                        selectsEnd
+                        startDate={endDate}
+                        endDate={endDate}
+                        minDate={startDate}
+                        className={'DPstartDate'}
+                    />
+                </div>
+            </div>
+
+4. css
+            .CalendarSeach {
+                display: flex;
+                align-items: center;
+            }
+
+            .CalendarSeach > span {
+                padding: 0 8px;
+            }
+
+            .CalendarSeach > DatePicker {
+                height: 200px;
+            }
+
+            .DPstartDate {
+                width: 140px;
+                border-radius: 8px;
+                border: 1px solid #dadada;
+                padding: 12px 16px;
+                font-size: 16px;
+                text-align: center;
+            }
 
     
 
