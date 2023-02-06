@@ -7,10 +7,14 @@
  -  HomePrintList.js 기간별 검색 추가
 
 1. 인스톨 :
+            
             npm install react-datepicker --save
+
 2. 임포트 :
+            
             import DatePicker from "react-datepicker";
             import "react-datepicker/dist/react-datepicker.css";
+
 3. html : 
 
             <div className="CalendarSeach">
