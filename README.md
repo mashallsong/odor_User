@@ -5,6 +5,7 @@
  -  2023.01.28 HomePrintList 추가 작업 완료
  -  Home > 사용자 정보 > 지도 클릭 시 모달창 버튼 > 모달 제작
  -  HomePrintList.js 기간별 검색 추가
+ -  2023.02.15 SideNavLogin.js 파일 추가 / Index.css 70~ 추가
 
 1. 인스톨 :
             

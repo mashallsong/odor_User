@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SideNav from "./Components/SideNav";
+import SideNavLogin from "./Components/SideNavLogin";
+
 import Customer from "./Pages/Customer";
 import Home from "./Pages/Home";
 import HomePrintList from "./Pages/HomePrintList";
@@ -13,7 +15,7 @@ function App() {
   return (
     <div className="root-wrap">
       <BrowserRouter>
-        <SideNav />
+        <SideNavLogin />
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/Login" element={<Login />} />

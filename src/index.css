@@ -67,3 +67,14 @@ body {
     border-radius: 16px;
 }
 
+/* SideNavLogin 로그인화면 */
+.footer {
+    color: #CCCCCC;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.footer > a {
+    color: #CCCCCC;
+}
