@@ -74,7 +74,15 @@ body {
     line-height: 20px;
     text-decoration: none;
 }
+.sideNavLogin {
+    padding: 16px;
+}
 
-.footer > a {
-    color: #CCCCCC;
+.sideNavLogin ul li {
+    margin-top: 16px;
+}
+
+.copyright {
+    font-size: 11px;
+    color: #8B8B8B;
 }

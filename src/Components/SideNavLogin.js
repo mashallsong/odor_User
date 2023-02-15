@@ -6,7 +6,7 @@ export default function SideNavLogin(){
     return (
         <div className="sidenav-container">
             <div className="sidenav-wrap">
-                <div className="sidenav-list-wrap">
+                <div className="sideNavLogin">
                     <Link to='/'>
                         <img style={{marginTop: "32px", marginBottom: "32px" , marginLeft: "18px"}} 
                              src={Logo} alt="로고" />
@@ -25,8 +25,8 @@ export default function SideNavLogin(){
                         <li>
                             <p>Address</p>
                             <p>
-                            경기도 화성시 남양읍 남양로451번길49 A동
-                            (우편번호: 18269)
+                            경기도 화성시 남양읍 남양로451번길 49 A동
+                            <br />(우 18269)
                             </p>
                         </li>
                         <li>
@@ -37,7 +37,7 @@ export default function SideNavLogin(){
                             Republic of Korea, zip code: 18269
                             </p>
                         </li>
-                        <li>
+                        <li className="copyright">
                             Copyright ⓒ 2022 ECOview Solution Inc, All Right Reserved.
                         </li>
                     </ul>
