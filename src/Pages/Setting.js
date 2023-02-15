@@ -8,6 +8,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from '@mui/material/Button';
 import Checkbox from '@mui/material/Checkbox';
 
+// 콤보박스추가
+import Box from '@mui/material/Box';
+import InputLabel from '@mui/material/InputLabel';
+import FormControl from '@mui/material/FormControl';
+import NativeSelect from '@mui/material/NativeSelect';
+
+
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 export default function Setting(){
@@ -138,7 +145,23 @@ export default function Setting(){
                                 <ul className="realtimeTableTd">
                                     <li>MOS-KR00001</li>
                                     <li>30</li>
-                                    <li>10</li>
+                                    <li className="comboBox">
+                                        <Box sx={{ maxWidth: 120 }}>
+                                            <FormControl fullWidth>
+                                                <NativeSelect
+                                                defaultValue={30}
+                                                inputProps={{
+                                                    name: '',
+                                                    id: 'uncontrolled-native',
+                                                }}
+                                                >
+                                                <option value={10}>10</option>
+                                                <option value={20}>20</option>
+                                                <option value={30}>30</option>
+                                                </NativeSelect>
+                                            </FormControl>
+                                        </Box>
+                                    </li>
                                 </ul>
                                 <div className="settingLayoutBody1Btn">
                                 <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , margin: '0 16px' , padding: '6px 64px', border: 'none' , color:'white'}} 

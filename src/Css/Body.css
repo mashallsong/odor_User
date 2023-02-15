@@ -627,3 +627,9 @@
     padding: 8px 32px;
     margin-top: 8px;
 }
+
+.comboBox {
+display: flex;
+align-items: center;
+justify-content: center;
+}

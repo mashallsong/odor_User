@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="root-wrap">
       <BrowserRouter>
-        <SideNavLogin />
+        <SideNav />
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/Login" element={<Login />} />
