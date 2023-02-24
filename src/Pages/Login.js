@@ -2,8 +2,13 @@ import React, { useEffect, useState } from 'react'
 import '../Css/Header.css';
 import '../Css/Body.css';
 
-import {faMagnifyingGlass, faWrench} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// 아이디 비밀번호 input
+import IconButton from '@mui/material/IconButton';
+import InputAdornment from '@mui/material/InputAdornment';
+import FormControl from '@mui/material/FormControl';
+import Visibility from '@mui/icons-material/Visibility';
+import VisibilityOff from '@mui/icons-material/VisibilityOff';
+import OutlinedInput from '@mui/material/OutlinedInput';
 
 
 const User = {
@@ -58,6 +63,13 @@ const User = {
     }, [emailValid, pwValid]);
 
 
+    const [showPassword, setShowPassword] = React.useState(false);
+
+    const handleClickShowPassword = () => setShowPassword((show) => !show);
+  
+    const handleMouseDownPassword = (event) => {
+      event.preventDefault();
+    };
 
     return (
         <div className="container">
@@ -69,7 +81,16 @@ const User = {
                         </div>
                         <div className="login-input-layout">
                             <div className="login-input-title">이메일 주소</div>
-                            <div className="login-input-wrap">
+                            <FormControl sx={{ width: '100%' }} variant="outlined">
+                              <OutlinedInput
+                                style={{ border: '2px' , borderRadius: '8px' , marginTop: '12px' , height: '60px' }}
+                                type="text"
+                                placeholder="test@gmail.com"
+                                value={email}
+                                onChange={handleEmail}
+                              />
+                            </FormControl>
+                            {/* <div className="login-input-wrap">
                             <input
                                 className="input"
                                 type="text"
@@ -77,7 +98,7 @@ const User = {
                                 value={email}
                                 onChange={handleEmail}
                              />
-                            </div>
+                            </div> */}
                             <div className="login-error-message">
                             {!emailValid && email.length > 0 && (
                                 <div>올바른 이메일을 입력해주세요.</div>
@@ -85,7 +106,29 @@ const User = {
                             </div>
 
                             <div className="login-input-title">비밀번호</div>
-                            <div className="login-input-wrap">
+                            <FormControl sx={{ width: '100%' }} variant="outlined">     
+                              <OutlinedInput
+                                style={{ border: '2px' , borderRadius: '8px' , marginTop: '12px' , height: '60px' }}
+                                id="outlined-adornment-password"
+                                type={showPassword ? 'text' : 'password'}
+                                placeholder="영문, 숫자, 특수문자 포함 8자 이상"
+                                value={pw}
+                                onChange={handlePw}
+                                endAdornment={
+                                  <InputAdornment position="end">
+                                    <IconButton
+                                      aria-label="toggle password visibility"
+                                      onClick={handleClickShowPassword}
+                                      onMouseDown={handleMouseDownPassword}
+                                      edge="end"
+                                    >
+                                      {showPassword ? <VisibilityOff /> : <Visibility />}
+                                    </IconButton>
+                                  </InputAdornment>
+                                }
+                              />
+                            </FormControl>
+                            {/* <div className="login-input-wrap">
                             <input
                                 className="input"
                                 type="password"
@@ -93,7 +136,7 @@ const User = {
                                 value={pw}
                                 onChange={handlePw}
                              />
-                            </div>
+                            </div> */}
                             <div className="login-error-message">
                                 {!pwValid && pw.length > 0 && (
                                 <div>영문, 숫자, 특수문자 포함 8자 이상 입력해주세요.</div>
