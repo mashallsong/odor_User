@@ -7,7 +7,7 @@
  -  HomePrintList.js 기간별 검색 추가
  -  2023.02.15 Components/SideNavLogin.js 파일 추가 / Index.css 70~ 추가
  -  Setting.js 11~ import 추가 / 149~163 추가 / Body.css .comboBox 추가
- -  2023,02,24 Login.js 아이디/비번보이기 input 수정  import:5-11, html:84-139줄  
+ -  2023.02.24 Login.js 아이디/비번보이기 input 수정  import:5-11, html:84-139줄  
 
 1. 인스톨 :
             
